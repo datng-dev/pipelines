@@ -5,6 +5,8 @@ stages:
       dockerfilePath: ./Dockerfile
       buildContext: .
       tag: cloudnautique/pipeline:${CICD_EXECUTION_SEQUENCE}
+    env:
+      PLUGIN_MTU: 1450
 - name: deploy
   steps:
   - applyYamlConfig:
