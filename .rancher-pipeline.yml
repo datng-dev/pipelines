@@ -6,7 +6,7 @@ stages:
       buildContext: .
       tag: cloudnautique/pipeline:${CICD_EXECUTION_SEQUENCE}
     env:
-      PLUGIN_MTU: 1450
+      PLUGIN_INSECURE: "true"
 - name: deploy
   steps:
   - applyYamlConfig:
