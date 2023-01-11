@@ -4,7 +4,8 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: cloudnautique/pipeline:${CICD_EXECUTION_SEQUENCE}
+      tag: myregistry/pipeline:${CICD_EXECUTION_SEQUENCE}
+      registry: index.docker.io
     env:
       PLUGIN_INSECURE: "true"
 - name: deploy
@@ -17,3 +18,4 @@ stages:
       - master
 timeout: 60
 branch: {}
+notification: {}
