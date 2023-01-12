@@ -18,6 +18,6 @@ stages:
     branch:
       include:
       - master
-timeout: 1000
+timeout: 20000
 branch: {}
 notification: {}
