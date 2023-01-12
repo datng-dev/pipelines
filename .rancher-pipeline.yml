@@ -12,7 +12,7 @@ stages:
 - name: deploy
   steps:
   - applyYamlConfig:
-      path: ./deploy/singleshot.yml
+      path: ./deploy/singleshot.yaml
   when:
     branch:
       include:
