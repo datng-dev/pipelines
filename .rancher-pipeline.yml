@@ -4,12 +4,13 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: myproject
+      tag: tag: <TAG_NAME>:${CICD_EXECUTION_SEQUENCE}
       pushRemote: true
       registry: 10.124.68.86:5000
     env:
       PLUGIN_DEBUG: "true"
       PLUGIN_INSECURE: "true"
+      PLUGIN_STORAGE_PATH: /var/lib/docker/2
 - name: deploy
   steps:
   - applyYamlConfig:
