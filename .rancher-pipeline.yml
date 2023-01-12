@@ -7,6 +7,8 @@ stages:
       tag: myproject
       pushRemote: true
       registry: 10.124.68.86:5000
+      imagePullSecrets:
+      - name: myregistry
     env:
       PLUGIN_DEBUG: "true"
       PLUGIN_INSECURE: "true" 
