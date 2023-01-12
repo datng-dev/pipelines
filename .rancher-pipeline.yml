@@ -6,7 +6,7 @@ stages:
       buildContext: .
       tag: myproject
       pushRemote: true
-      registry: 10.124.68.86:5000
+      registry: index.docker.io
     env:
       PLUGIN_DEBUG: "true"
       PLUGIN_STORAGE_PATH: /var/lib/docker/2
