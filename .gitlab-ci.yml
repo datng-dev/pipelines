@@ -334,7 +334,7 @@ rollout 100%:
       --set releaseOverride="$CI_ENVIRONMENT_SLUG" \
       --set image.repository="$CI_APPLICATION_REPOSITORY" \
       --set image.tag="$CI_APPLICATION_TAG" \
-      --set image.pullPolicy=IfNotPresent \
+      --set image.pullPolicy=Always \
       --set image.secrets[0].name="$secret_name" \
       --set application.track="$track" \
       --set application.database_url="$DATABASE_URL" \
