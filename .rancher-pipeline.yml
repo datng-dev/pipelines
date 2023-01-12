@@ -4,7 +4,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: tag: <TAG_NAME>:${CICD_EXECUTION_SEQUENCE}
+      tag: <TAG_NAME>:${CICD_EXECUTION_SEQUENCE}
       pushRemote: true
       registry: 10.124.68.86:5000
     env:
