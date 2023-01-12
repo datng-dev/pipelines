@@ -5,7 +5,6 @@ stages:
       dockerfilePath: ./Dockerfile
       buildContext: .
       tag: myproject
-      pushRemote: true
       registry: index.docker.io
     env:
       PLUGIN_DEBUG: "true"
