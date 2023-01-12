@@ -4,7 +4,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: <TAG_NAME>:${CICD_EXECUTION_SEQUENCE}
+      tag: myproject
       registry: 10.124.68.86:5000
     env:
       PLUGIN_DEBUG: "true"
