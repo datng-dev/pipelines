@@ -9,7 +9,7 @@ stages:
       registry: 10.124.68.141:30858
     env:
       PLUGIN_DEBUG: "true"
-#       PLUGIN_INSECURE: "true"
+      PLUGIN_INSECURE: "true"
 - name: deploy
   steps:
   - applyYamlConfig:
